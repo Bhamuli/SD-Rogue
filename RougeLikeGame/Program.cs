@@ -1,17 +1,15 @@
-﻿using RogueLib.Dungeon;
-using RogueLib.Engine;
-using RogueLib.Utilities;
-using TileSet = System.Collections.Generic.HashSet<RogueLib.Utilities.Vector2>;
+﻿using RogueLib.Engine;
 
 namespace RlGameNS;
 
-
 class Program {
-
    static void Main(string[] args) {
       Console.Clear();
+      Console.CursorVisible = false;
       Game game = new MyGame();
       game.run();
-      
+      Console.ResetColor();
+      Console.Clear();
+      Console.WriteLine("Thanks for playing our Rogue Like Prototype.");
    }
 }
